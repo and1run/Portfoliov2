@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessbord</title>
+    <link rel="stylesheet" href="styleChessbord.css">
+</head>
+<body>
+    <h1>Descopera figurile de sah</h1>
+    
+<table id="intreg">
+    <tr id="up">
+        <td></td>
+        <td>
+            <table class="litere">
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                </tr>
+            </table>
+        </td>
+        <td></td>
+    </tr>
+    <tr id="middle">
+        <td>
+            <table class="cifre ">
+                <tr>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table class="bord">
+                <tr>
+                    <td>&#9814<span class="tooltip">Rook</span></td>
+                    <td>&#9816<span class="tooltip">Horse</span></td>
+                    <td>&#9815<span class="tooltip">Bishop</span></td>
+                    <td>&#9813<span class="tooltip">Queen</span></td>
+                    <td>&#9812<span class="tooltip">King</span></td>
+                    <td>&#9815<span class="tooltip">Bishop</span></td>
+                    <td>&#9816<span class="tooltip">Horse</span></td>
+                    <td>&#9814<span class="tooltip">Rook</span></td>
+                </tr>
+        
+                <tr>
+                    <td>&#9817<span class="tooltip">Pawn</span></td>
+                    <td>&#9817<span class="tooltip">Pawn</span></td>
+                    <td>&#9817<span class="tooltip">Pawn</span></td>
+                    <td>&#9817<span class="tooltip">Pawn</span></td>
+                    <td>&#9817<span class="tooltip">Pawn</span></td>
+                    <td>&#9817<span class="tooltip">Pawn</span></td>
+                    <td>&#9817<span class="tooltip">Pawn</span></td>
+                    <td>&#9817<span class="tooltip">Pawn</span></td>
+                </tr>
+        
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+        
+                <tr>
+                    <td>&#9823<span class="tooltip">Pawn</span></td>
+                    <td>&#9823<span class="tooltip">Pawn</span></td>
+                    <td>&#9823<span class="tooltip">Pawn</span></td>
+                    <td>&#9823<span class="tooltip">Pawn</span></td>
+                    <td>&#9823<span class="tooltip">Pawn</span></td>
+                    <td>&#9823<span class="tooltip">Pawn</span></td>
+                    <td>&#9823<span class="tooltip">Pawn</span></td>
+                    <td>&#9823<span class="tooltip">Pawn</span></td>
+                </tr>
+        
+                <tr>
+                    <td>&#9820<span class="tooltip">Rook</span></td>
+                    <td>&#9822<span class="tooltip">Horse</span></td>
+                    <td>&#9821<span class="tooltip">Bishop</span></td>
+                    <td>&#9819<span class="tooltip">Queen</span></td>
+                    <td>&#9818<span class="tooltip">King</span></td>
+                    <td>&#9821<span class="tooltip">Bishop</span></td>
+                    <td>&#9822<span class="tooltip">Horse</span></td>
+                    <td>&#9820<span class="tooltip">Rook</span></td>
+                </tr>
+            </table>
+        
+            
+        </td>
+        <td>
+            <table class="cifre">
+                <tr>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr id="bottom">
+        <td></td>
+        <td>
+            <table class="litere">
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                </tr>
+            </table>
+        </td>
+        <td></td>
+    </tr>
+
+</table>
+        
+    
+    
+
+        
+
+        
+        
+    
+        
+
+
+        
+    
+
+   
+
+    
+
+</body>
+</html>

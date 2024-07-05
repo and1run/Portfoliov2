@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+body{
+    background-color: bisque;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin: 50px auto 0;
+}
+
+/* Centram intreg tabelul si setam marimea patratelului pe bord */
+
+#intreg {
+    margin:0 auto;
+}
+
+.bord td, .cifre td, .litere td {
+    height: 100px;
+    width: 100px;
+}
+
+/* Setam borderul la bord si la fiecare patratel */
+.bord td {
+    border: 2px solid black;
+    text-align: center;
+    font-size: 80px;
+    line-height: 100px;
+}
+
+.bord {
+    border: 4px solid black;
+}
+
+/* Aranjam literele si cifrele din jurul bordului */
+
+.cifre, .litere {
+    font-size: 30px;
+}
+
+#up .litere td {
+    text-align: center;
+    vertical-align: bottom;
+}
+
+#bottom .litere td {
+    text-align: center;
+    vertical-align: baseline;
+}
+
+#middle td:first-child .cifre td {
+    text-align: end;
+    vertical-align: middle;
+}
+
+/* Coloram bordul in doua culori */  
+
+.bord tr:nth-child(odd) td:nth-child(even) {
+    background-color: burlywood;
+}
+.bord tr:nth-child(even) td:nth-child(odd) {
+    background-color: burlywood;
+}
+
+.bord tr:nth-child(2n+1) td:nth-child(2n+1) {
+    background-color: green;
+}
+.bord tr:nth-child(2n) td:nth-child(2n) {
+    background-color: green;
+}
+
+/* Schimbam culoarea figurii si a backgroundului la patratel */
+
+#middle .bord tr td:hover{
+    background-color: aliceblue;
+    color:rgb(0, 157, 255);
+}
+
+/* Tooltipul de baza */
+
+.tooltip {
+    background-color: black;
+    border: #fff solid 2px;
+    padding: 5px;
+    width: fit-content;
+    color: #fff;
+    visibility: hidden;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    position:absolute;
+    z-index: 1;
+}
+
+/* Vizualizam tooltipul la figurile de sus */
+
+#middle .bord tr:nth-last-child(1) td:hover .tooltip{
+    visibility: visible;
+}
+#middle .bord tr:nth-last-child(2) td:hover .tooltip{
+    visibility: visible;
+}
+
+/* Vizualizam tooltipul la figurile de jos, totodata schimbind culorile */
+
+#middle .bord tr:nth-child(1) td:hover .tooltip{
+    visibility: visible;
+    background-color: #fff;
+    border: black solid 2px;
+    color: black;
+}
+#middle .bord tr:nth-child(2) td:hover .tooltip{
+    visibility: visible;
+    background-color: #fff;
+    border: black solid 2px;
+    color: black;
+}
